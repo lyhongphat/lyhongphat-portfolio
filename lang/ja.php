@@ -33,5 +33,20 @@ return [
     'footer_title' => '一緒に素晴らしいものを構築しましょう。',
     'footer_desc' => 'コラボレーションやご挨拶など、お気軽にご連絡ください。',
     'footer_cta' => '挨拶する',
-    'footer_rights' => 'Portfolio. PHPで構築。'
+    'footer_rights' => 'Portfolio. PHPで構築されました。',
+    'fun_title' => 'Just 4 Fun | 天気と音楽',
+    'fun_weather_title' => '地元の天気',
+    'fun_weather_loading' => '現在地を検出しています...',
+    'fun_weather_denied' => '位置情報へのアクセスが拒否されました。天気を見るには許可してください。',
+    'fun_weather_unsupported' => 'お使いのブラウザはジオロケーションをサポートしていません。',
+    'fun_weather_error' => '天気データを取得できませんでした。後でもう一度お試しください。',
+    'fun_music_title' => '私の音楽の好み',
+    'fun_music_desc' => '音楽は私の逃避場所であり、燃料でもあります。現在のお気に入りを紹介します。',
+    'fun_music_lofi_title' => 'Lo-fi & Chill',
+    'fun_music_lofi_desc' => '長時間のコーディングセッションや深い集中に最適なバックグラウンドミュージック。',
+    'fun_music_classical_title' => 'モダン・クラシック',
+    'fun_music_classical_desc' => '思考を明晰にし、リラックスさせるピアノ主体のトラック。',
+    'fun_music_synth_title' => 'Synthwave',
+    'fun_music_synth_desc' => '夜のエネルギーを高く保つ80年代の未来的バイブス。',
+    'fun_back_to_portfolio' => 'ポートフォリオに戻る'
 ];

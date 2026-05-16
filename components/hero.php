@@ -11,6 +11,7 @@
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary"><?php echo $lang['hero_cta']; ?></a>
                     <a href="assets/LyHongPhat_SoftwareEngineer_Resume.pdf" class="btn btn-outline" target="_blank" download="LyHongPhat_CV.pdf"><?php echo $lang['hero_download_cv']; ?></a>
+                    <a href="/fun" class="btn btn-outline" style="border-color: #64ffda; color: #64ffda;">Just 4 Fun ✨</a>
                 </div>
             </div>
         </div>

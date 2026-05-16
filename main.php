@@ -16,10 +16,17 @@ if (!in_array($current_lang, $allowed_langs)) {
 $lang = require_once __DIR__ . "/lang/{$current_lang}.php";
 
 // Main Entry Point
-require_once __DIR__ . '/components/header.php';
-require_once __DIR__ . '/components/hero.php';
-require_once __DIR__ . '/components/about.php';
-require_once __DIR__ . '/components/experience.php';
-require_once __DIR__ . '/components/projects.php';
-require_once __DIR__ . '/components/footer.php';
+$request_uri = $_SERVER['REQUEST_URI'];
+$path = parse_url($request_uri, PHP_URL_PATH);
+
+if ($path === '/fun' || $path === '/fun.php') {
+    require_once __DIR__ . '/fun.php';
+} else {
+    require_once __DIR__ . '/components/header.php';
+    require_once __DIR__ . '/components/hero.php';
+    require_once __DIR__ . '/components/about.php';
+    require_once __DIR__ . '/components/experience.php';
+    require_once __DIR__ . '/components/projects.php';
+    require_once __DIR__ . '/components/footer.php';
+}
 ?>

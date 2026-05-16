@@ -33,5 +33,20 @@ return [
     'footer_title' => "Let's build something amazing together.",
     'footer_desc' => 'Feel free to reach out for collaborations or just a friendly hello.',
     'footer_cta' => 'Say Hello',
-    'footer_rights' => 'Portfolio. Built with PHP.'
+    'footer_rights' => 'Portfolio. Built with PHP.',
+    'fun_title' => 'Just 4 Fun | Music & Weather',
+    'fun_weather_title' => 'Local Weather',
+    'fun_weather_loading' => 'Detecting your location...',
+    'fun_weather_denied' => 'Location access denied. Please allow location to see the weather.',
+    'fun_weather_unsupported' => 'Geolocation is not supported by your browser.',
+    'fun_weather_error' => 'Couldn\'t fetch weather data. Please try again later.',
+    'fun_music_title' => 'My Music Taste',
+    'fun_music_desc' => 'Music is my escape and my fuel. Here\'s what\'s currently on my radar.',
+    'fun_music_lofi_title' => 'Lo-fi & Chill',
+    'fun_music_lofi_desc' => 'Perfect background for long coding sessions and deep focus.',
+    'fun_music_classical_title' => 'Classical Modern',
+    'fun_music_classical_desc' => 'Piano-led tracks that help in clear thinking and relaxation.',
+    'fun_music_synth_title' => 'Synthwave',
+    'fun_music_synth_desc' => 'That 80s futuristic vibe that keeps the energy high at night.',
+    'fun_back_to_portfolio' => 'Back to Portfolio'
 ];

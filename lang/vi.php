@@ -33,5 +33,20 @@ return [
     'footer_title' => 'Hãy cùng nhau xây dựng những điều tuyệt vời.',
     'footer_desc' => 'Đừng ngần ngại liên hệ để hợp tác hoặc chỉ để gửi một lời chào.',
     'footer_cta' => 'Gửi Lời Chào',
-    'footer_rights' => 'Portfolio. Được xây dựng bằng PHP.'
+    'footer_rights' => 'Portfolio. Được xây dựng bằng PHP.',
+    'fun_title' => 'Just 4 Fun | Thời tiết & Âm nhạc',
+    'fun_weather_title' => 'Thời tiết địa phương',
+    'fun_weather_loading' => 'Đang xác định vị trí của bạn...',
+    'fun_weather_denied' => 'Quyền truy cập vị trí bị từ chối. Vui lòng cho phép để xem thời tiết.',
+    'fun_weather_unsupported' => 'Trình duyệt của bạn không hỗ trợ định vị địa lý.',
+    'fun_weather_error' => 'Không thể lấy dữ liệu thời tiết. Vui lòng thử lại sau.',
+    'fun_music_title' => 'Gu âm nhạc của tôi',
+    'fun_music_desc' => 'Âm nhạc là nơi tôi thư giãn và nạp lại năng lượng. Đây là những gì tôi thường nghe.',
+    'fun_music_lofi_title' => 'Lo-fi & Chill',
+    'fun_music_lofi_desc' => 'Nền nhạc hoàn hảo cho những buổi code dài và tập trung cao độ.',
+    'fun_music_classical_title' => 'Cổ điển Hiện đại',
+    'fun_music_classical_desc' => 'Những bản nhạc piano giúp tư duy rõ ràng và thư giãn.',
+    'fun_music_synth_title' => 'Synthwave',
+    'fun_music_synth_desc' => 'Rung cảm tương lai thập niên 80 giúp duy trì năng lượng vào ban đêm.',
+    'fun_back_to_portfolio' => 'Quay lại Portfolio'
 ];

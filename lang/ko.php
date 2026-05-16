@@ -33,5 +33,20 @@ return [
     'footer_title' => '함께 멋진 것을 만들어 봅시다.',
     'footer_desc' => '협업이나 인사를 위해 언제든지 연락 주세요.',
     'footer_cta' => '인사하기',
-    'footer_rights' => 'Portfolio. PHP로 제작됨.'
+    'footer_rights' => 'Portfolio. PHP로 제작되었습니다.',
+    'fun_title' => 'Just 4 Fun | 날씨와 음악',
+    'fun_weather_title' => '현지 날씨',
+    'fun_weather_loading' => '위치를 검색 중입니다...',
+    'fun_weather_denied' => '위치 정보 액세스가 거부되었습니다. 날씨를 확인하려면 위치 공유를 허용해 주세요.',
+    'fun_weather_unsupported' => '사용 중인 브라우저는 위치 정보 기능을 지원하지 않습니다.',
+    'fun_weather_error' => '날씨 정보를 가져올 수 없습니다. 나중에 다시 시도해 주세요.',
+    'fun_music_title' => '나의 음악 취향',
+    'fun_music_desc' => '음악은 저의 탈출구이자 연료입니다. 요즘 즐겨 듣는 음악들을 소개합니다.',
+    'fun_music_lofi_title' => 'Lo-fi & Chill',
+    'fun_music_lofi_desc' => '긴 코딩 세션과 깊은 집중에 완벽한 배경 음악입니다.',
+    'fun_music_classical_title' => '모던 클래식',
+    'fun_music_classical_desc' => '생각을 맑게 해주고 휴식을 돕는 피아노 중심의 곡들입니다.',
+    'fun_music_synth_title' => 'Synthwave',
+    'fun_music_synth_desc' => '밤의 에너지를 높게 유지해 주는 80년대 미래 지향적 분위기입니다.',
+    'fun_back_to_portfolio' => '포트폴리오로 돌아가기'
 ];
