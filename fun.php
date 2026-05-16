@@ -30,6 +30,8 @@ global $lang, $current_lang;
             border: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 40px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
         }
         .weather-info h2 {
             font-size: 3rem;
@@ -39,6 +41,35 @@ global $lang, $current_lang;
         .weather-info p {
             font-size: 1.2rem;
             color: var(--text-light);
+        }
+        .music-recommendation {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: none; /* Shown after weather fetch */
+        }
+        .music-recommendation h4 {
+            color: var(--accent);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        .recommendation-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: rgba(100, 255, 218, 0.1);
+            padding: 15px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .recommendation-box:hover {
+            transform: scale(1.02);
+            background: rgba(100, 255, 218, 0.15);
         }
         .music-section {
             width: 90%;
@@ -104,6 +135,14 @@ global $lang, $current_lang;
             <div id="weather-content">
                 <p id="weather-loading"><?php echo $lang['fun_weather_loading']; ?></p>
             </div>
+            
+            <div id="music-recommendation" class="music-recommendation">
+                <h4><?php echo $lang['fun_recommendation']; ?></h4>
+                <a id="recommendation-link" href="#" target="_blank" class="recommendation-box">
+                    <span style="font-size: 1.5rem;">🎵</span>
+                    <span id="recommendation-text">Loading suggestion...</span>
+                </a>
+            </div>
         </div>
 
         <div class="music-section">
@@ -139,8 +178,52 @@ global $lang, $current_lang;
             unsupported: "<?php echo addslashes($lang['fun_weather_unsupported']); ?>"
         };
 
+        const musicDatabase = {
+            sunny: {
+                en: { title: "Upbeat Synthwave Mix", url: "https://www.youtube.com/watch?v=4xDzrJKXOOY" },
+                vi: { title: "V-Pop Sôi Động Hè", url: "https://www.youtube.com/watch?v=FstU97K_u6U" },
+                ja: { title: "City Pop Essentials", url: "https://www.youtube.com/watch?v=3bNITQR4Uso" },
+                ko: { title: "K-Pop Summer Hits", url: "https://www.youtube.com/watch?v=2S24-y0Ij3Y" }
+            },
+            rainy: {
+                en: { title: "Rainy Day Lo-fi Beats", url: "https://www.youtube.com/watch?v=lTRiuFIWV5M" },
+                vi: { title: "Lo-fi Nhạc Việt Chill", url: "https://www.youtube.com/watch?v=ZfA7V6B5YpE" },
+                ja: { title: "Japanese Lo-fi Hip Hop", url: "https://www.youtube.com/watch?v=5wRWniH7rt8" },
+                ko: { title: "Korean R&B Chill", url: "https://www.youtube.com/watch?v=baS_96A00O8" }
+            },
+            cloudy: {
+                en: { title: "Moody Classical Piano", url: "https://www.youtube.com/watch?v=WJ3-F02-F_Y" },
+                vi: { title: "Nhạc Không Lời Nhẹ Nhàng", url: "https://www.youtube.com/watch?v=4T858p03p2s" },
+                ja: { title: "Studio Ghibli Piano Mix", url: "https://www.youtube.com/watch?v=8mY3Udau4S8" },
+                ko: { title: "K-Drama Emotional OST", url: "https://www.youtube.com/watch?v=mC1v86q7uXY" }
+            },
+            clear: {
+                en: { title: "Future Funk Party", url: "https://www.youtube.com/watch?v=v_f6Yk_09rE" },
+                vi: { title: "Deep House Vietnam", url: "https://www.youtube.com/watch?v=j_2XNRE967c" },
+                ja: { title: "J-Rock High Energy", url: "https://www.youtube.com/watch?v=9ayAsfS3N2E" },
+                ko: { title: "K-Indie Chill Vibes", url: "https://www.youtube.com/watch?v=6rS7_0Cq344" }
+            }
+        };
+
+        function getMusicSuggestion(desc, lang) {
+            let category = 'sunny';
+            const lowerDesc = desc.toLowerCase();
+            if (lowerDesc.includes('rain') || lowerDesc.includes('drizzle') || lowerDesc.includes('shower')) {
+                category = 'rainy';
+            } else if (lowerDesc.includes('cloud') || lowerDesc.includes('overcast') || lowerDesc.includes('mist')) {
+                category = 'cloudy';
+            } else if (lowerDesc.includes('clear')) {
+                category = 'clear';
+            }
+
+            return musicDatabase[category][lang] || musicDatabase[category]['en'];
+        }
+
         async function fetchWeather() {
             const content = document.getElementById('weather-content');
+            const recSection = document.getElementById('music-recommendation');
+            const recText = document.getElementById('recommendation-text');
+            const recLink = document.getElementById('recommendation-link');
             
             if ("geolocation" in navigator) {
                 navigator.geolocation.getCurrentPosition(async (position) => {
@@ -163,6 +246,13 @@ global $lang, $current_lang;
                                 <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">📍 ${city}, ${country}</p>
                             </div>
                         `;
+
+                        // Show recommendation
+                        const suggestion = getMusicSuggestion(desc, "<?php echo $current_lang; ?>");
+                        recText.innerText = suggestion.title;
+                        recLink.href = suggestion.url;
+                        recSection.style.display = 'block';
+
                     } catch (error) {
                         content.innerHTML = `<p>${langStrings.error}</p>`;
                     }

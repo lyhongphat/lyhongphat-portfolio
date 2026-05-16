@@ -40,6 +40,7 @@
                     <li><a href="#hero" class="nav-link"><?php echo $lang['nav_home']; ?></a></li>
                     <li><a href="#about" class="nav-link"><?php echo $lang['nav_about']; ?></a></li>
                     <li><a href="#projects" class="nav-link"><?php echo $lang['nav_projects']; ?></a></li>
+                    <li><a href="/fun" class="nav-link"><?php echo $lang['fun_nav']; ?></a></li>
                     <li><a href="#contact" class="btn btn-outline nav-link"><?php echo $lang['nav_contact']; ?></a></li>
                 </ul>
                 <div class="lang-switcher">

@@ -9,6 +9,7 @@
             <div class="footer-socials" style="margin-top: 30px;">
                 <a href="https://github.com/lyhongphat" aria-label="GitHub" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/lyhongphat" aria-label="LinkedIn" target="_blank">LinkedIn</a>
+                <a href="/fun" style="margin-left: 20px; color: var(--accent);"><?php echo $lang['fun_nav']; ?></a>
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?php echo date("Y"); ?> <?php echo $lang['footer_rights']; ?></p>

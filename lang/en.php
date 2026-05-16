@@ -34,7 +34,8 @@ return [
     'footer_desc' => 'Feel free to reach out for collaborations or just a friendly hello.',
     'footer_cta' => 'Say Hello',
     'footer_rights' => 'Portfolio. Built with PHP.',
-    'fun_title' => 'Just 4 Fun | Music & Weather',
+    'fun_title' => 'Playground | Music & Weather',
+    'fun_nav' => 'Playground',
     'fun_weather_title' => 'Local Weather',
     'fun_weather_loading' => 'Detecting your location...',
     'fun_weather_denied' => 'Location access denied. Please allow location to see the weather.',
@@ -48,5 +49,6 @@ return [
     'fun_music_classical_desc' => 'Piano-led tracks that help in clear thinking and relaxation.',
     'fun_music_synth_title' => 'Synthwave',
     'fun_music_synth_desc' => 'That 80s futuristic vibe that keeps the energy high at night.',
-    'fun_back_to_portfolio' => 'Back to Portfolio'
+    'fun_back_to_portfolio' => 'Back to Portfolio',
+    'fun_recommendation' => 'Recommended for this weather'
 ];

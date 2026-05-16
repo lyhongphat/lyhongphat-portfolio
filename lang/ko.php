@@ -34,7 +34,8 @@ return [
     'footer_desc' => '협업이나 인사를 위해 언제든지 연락 주세요.',
     'footer_cta' => '인사하기',
     'footer_rights' => 'Portfolio. PHP로 제작되었습니다.',
-    'fun_title' => 'Just 4 Fun | 날씨와 음악',
+    'fun_title' => '플레이그라운드 | 날씨와 음악',
+    'fun_nav' => '플레이그라운드',
     'fun_weather_title' => '현지 날씨',
     'fun_weather_loading' => '위치를 검색 중입니다...',
     'fun_weather_denied' => '위치 정보 액세스가 거부되었습니다. 날씨를 확인하려면 위치 공유를 허용해 주세요.',
@@ -48,5 +49,6 @@ return [
     'fun_music_classical_desc' => '생각을 맑게 해주고 휴식을 돕는 피아노 중심의 곡들입니다.',
     'fun_music_synth_title' => 'Synthwave',
     'fun_music_synth_desc' => '밤의 에너지를 높게 유지해 주는 80년대 미래 지향적 분위기입니다.',
-    'fun_back_to_portfolio' => '포트폴리오로 돌아가기'
+    'fun_back_to_portfolio' => '포트폴리오로 돌아가기',
+    'fun_recommendation' => '이 날씨에 어울리는 추천 음악'
 ];

@@ -34,7 +34,8 @@ return [
     'footer_desc' => 'コラボレーションやご挨拶など、お気軽にご連絡ください。',
     'footer_cta' => '挨拶する',
     'footer_rights' => 'Portfolio. PHPで構築されました。',
-    'fun_title' => 'Just 4 Fun | 天気と音楽',
+    'fun_title' => 'プレイグラウンド | 天気と音楽',
+    'fun_nav' => 'プレイグラウンド',
     'fun_weather_title' => '地元の天気',
     'fun_weather_loading' => '現在地を検出しています...',
     'fun_weather_denied' => '位置情報へのアクセスが拒否されました。天気を見るには許可してください。',
@@ -48,5 +49,6 @@ return [
     'fun_music_classical_desc' => '思考を明晰にし、リラックスさせるピアノ主体のトラック。',
     'fun_music_synth_title' => 'Synthwave',
     'fun_music_synth_desc' => '夜のエネルギーを高く保つ80年代の未来的バイブス。',
-    'fun_back_to_portfolio' => 'ポートフォリオに戻る'
+    'fun_back_to_portfolio' => 'ポートフォリオに戻る',
+    'fun_recommendation' => 'この天気にぴったりの音楽'
 ];
