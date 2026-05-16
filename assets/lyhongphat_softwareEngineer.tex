@@ -1,0 +1,275 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+\usepackage{multicol}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{20pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Ly Hong Phat -- Software Engineer} & \textbf{Email:} \href{mailto:lyhongphat261202@gmail.com}{lyhongphat261202@gmail.com}\\
+  \textbf{LinkedIn:} \href{https://www.linkedin.com/in/lyhongphat}{linkedin.com/in/lyhongphat} & \textbf{Mobile:} 0944468037 \\
+  \textbf{Github:} \href{https://github.com/lyhongphat}{github.com/lyhongphat} & \textbf{Location:} Ho Chi Minh City
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+  Software Engineer with nearly 2 years of experience designing, building, and maintaining enterprise-grade applications across .NET, Node.js, and Python ecosystems.
+  \resumeSubHeadingListStart
+    \item Proficient in designing scalable APIs, optimizing database performance, refactoring legacy modules, and improving system reliability.
+    \item Experienced in domain areas including civil status management, e-commerce platforms, farm management systems, and learning management systems.
+    \item Skilled in cloud deployment and containerization using AWS and Docker, with strong knowledge of PostgreSQL, SQL Server, and MongoDB.
+    \item Capable of working with design documents, handling complex business logic, collaborating with QA teams, and delivering stable, high-quality features in production environments.
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubheading
+    {University of Technology and Education HCMC (UTE)}{Ho Chi Minh City, Vietnam}
+    {Bachelor of Engineering in Information Technology; GPA: 3.2/4.0}{Oct 2020 -- Dec 2024}
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Programming Languages}{: C\#, JavaScript (Node.js), Python (Experience with: Java, PHP, Golang)}
+    }
+    \item{
+     \textbf{Frameworks / Platforms}{: ASP.NET Core, Entity Framework (EF6), NestJS, FastAPI, Django, Flask}
+    }
+    \item{
+     \textbf{Databases}{: PostgreSQL, SQL Server, MySQL, MongoDB (Experienced in query optimization \& large dataset handling)}
+    }
+    \item{
+     \textbf{Cloud \& DevOps}{: Docker, AWS (EC2, S3, Lambda), Linux, CI/CD (basic)}
+    }
+    \item{
+     \textbf{Search / Caching / Scheduling}{: ElasticSearch, Redis, ELK Stack, CronJob}
+    }
+    \item{
+     \textbf{Other}{: API Design, System Design (fundamentals), Performance Optimization, GrapeCity Diodocs - Active Report, Prompt Engineering, Reading Japanese Specifications}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------SOFT SKILLS-----------------
+\section{Soft Skills}
+ \resumeSubHeadingListStart
+    \item Strong analytical and problem-solving skills
+    \item Clear communication \& requirement clarification
+    \item Collaboration with QA/Tester to resolve issues
+    \item Ownership and responsibility in production systems
+    \item Fast learning \& adaptability across multiple tech stacks
+    \item Time management and disciplined workflow
+ \resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+\section{Languages}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{English}{: Working proficiency – able to communicate effectively in work and technical discussions (equivalent TOEIC 750)}
+    }
+    \item{
+     \textbf{Japanese}{: Working communication and technical document reading (JLPT N3 level)}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FPT Software}{Ho Chi Minh City}
+      {Software Engineer}{Jan 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Project: \begin{CJK}{UTF8}{min}新コング\end{CJK} (NEWKONG)}
+          {Developing and maintaining civil status management modules (marriage, birth, death registration, household records,...).}
+        \resumeItem{Tech stacks}
+          {C\#, .NET, VueJS, PostgreSQL, GrapeCity, Prompt Engineering}
+        \resumeItem{Responsibilities \& Achievements}
+          {}
+        \begin{itemize}[leftmargin=0.15in]
+          \item Implemented reusable common functions and optimized the Diodocs report system, reducing more than 50\% of code and improving maintainability
+          \item Designed and implemented reporting features to generate PDF/PNG outputs from database records and user inputs; optimized execution time and improved overall performance
+          \item Conducted pilot testing and evaluated multiple libraries to propose the most suitable solution for the reporting feature, ensuring compatibility, performance, and maintainability
+          \item Optimized performance for modules handling large datasets; resolved slow response issues and increased system throughput
+          \item Analyzed system architecture and data flow; designed and optimized SQL queries for better data consistency and execution speed
+          \item Developed and maintained APIs with robust validation logic; resolved issues related to data formatting and data transmission between modules
+          \item Reviewed Japanese design documents (HLD/LLD), ensured accurate implementation, and raised clarification tickets for inconsistent or unclear requirements
+          \item Collaborated with QA to reproduce bugs, identify root causes, and deliver timely fixes; participated in code reviews and regression testing to ensure high-quality releases
+          \item Investigated and resolved defects in the tracking system; ensured stable and reliable system operation
+          \item Translated business requirements into detailed implementation plans and contributed to system design and improvement discussions
+        \end{itemize}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {EBIZWORLD SOLUTION}{Ho Chi Minh City}
+      {Software Engineer}{Mar 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Project: Oxyl Farm Mate}
+          {Building backend for a farm management platform.}
+        \resumeItem{Role}
+          {Backend Developer (NestJS)}
+        \resumeItem{Technologies}
+          {JavaScript, NestJS, MongoDB, PostgreSQL, Cronjob, Docker, AWS}
+      \resumeItemListEnd
+      \vspace{2.5pt}
+      \resumeItemListStart
+        \resumeItem{Project: Savile}
+          {Developing backend for a high-end fashion \& lifestyle e-commerce platform.}
+        \resumeItem{Role}
+          {Backend Developer (Node.js, Express)}
+        \resumeItem{Technologies}
+          {Python, FastAPI, MongoDB, MySQL, CronJob, Docker, AWS}
+      \resumeItemListEnd
+      \vspace{2.5pt}
+      \resumeItemListStart
+        \resumeItem{Project: Tanngo LMS}
+          {Backend system for an online learning management platform.}
+        \resumeItem{Role}
+          {Backend Developer (Python)}
+        \resumeItem{Technologies}
+          {Python, FastAPI, MongoDB, PostgreSQL, AWS, Docker}
+      \resumeItemListEnd
+      \vspace{2.5pt}
+      \resumeItemListStart
+        \resumeItem{Responsibilities (across all EBIZWORLD projects)}
+          {}
+        \begin{itemize}[leftmargin=0.15in]
+          \item Designed and implemented RESTful APIs and business logic across multiple backend stacks (NestJS, FastAPI)
+          \item Developed core features including user management, class/assignment workflows, page management, and event scheduling
+          \item Implemented cronjob-based real-time notifications and background processing tasks
+          \item Integrated third-party services such as Astute Payroll for billing and payment operations
+          \item Wrote and maintained unit tests; validated API correctness and ensured feature stability before release
+          \item Deployed backend services using Docker and AWS, performed environment configuration and troubleshooting
+          \item Diagnosed and resolved bugs across multiple projects; collaborated with QA to ensure smooth releases
+        \end{itemize}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FPT Software}{Ho Chi Minh City}
+      {.NET Developer Intern}{Jun 2023 -- Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Tech}
+          {C\#, ASP.NET, Entity Framework (EF6), Identity Framework, SQL Server, Cloudinary}
+        \resumeItem{Project}
+          {Recruitment Web API}
+        \resumeItem{Responsibilities}
+          {}
+        \begin{itemize}[leftmargin=0.15in]
+          \item Implemented authentication/authorization with Identity Framework
+          \item Developed CRUD APIs using EF6 and SQL Server
+          \item Integrated Cloudinary for media storage
+        \end{itemize}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \newpage
+%-----------CERTIFICATIONS-----------------
+\section{Certificates}
+  \vspace{-5pt}
+  \begin{multicols}{2}
+  \resumeSubHeadingListStart
+    \item{\textbf{Cloud \& Infrastructure}}
+    \begin{itemize}[leftmargin=0.15in]
+      \item Google Cloud Fundamentals: Core Infrastructure
+      \item AWS Deployment \& Docker-based Infrastructure
+    \end{itemize}
+    
+    \item{\textbf{Software Engineering \& Backend}}
+    \begin{itemize}[leftmargin=0.15in]
+      \item .NET Full Stack Foundation -- Board Infinity (2024)
+      \item C\# and .NET Essential -- LinkedIn Learning
+      \item Introduction to Software Engineering -- IBM (2024)
+    \end{itemize}
+    
+    \item{\textbf{LLMs \& AI Applications Engineering}}
+    \begin{itemize}[leftmargin=0.15in]
+      \item Developing AI Systems with the OpenAI API -- DataCamp
+      \item Developing LLM Applications with LangChain -- DataCamp
+      \item Prompt Engineering with the OpenAI API -- DataCamp
+      \item Vector Databases for Embeddings with Pinecone -- DataCamp
+      \item Working with Llama 3 -- DataCamp
+    \end{itemize}
+    
+\item{\textbf{AI \& Machine Learning}}
+    \begin{itemize}[leftmargin=0.15in]
+      \item Introduction to Artificial Intelligence (AI) -- IBM (2024)
+      \item Machine Learning with Python -- IBM (2024)
+      \item Python for Data Science, AI \& Development -- IBM (2024)
+    \end{itemize}
+
+  \resumeSubHeadingListEnd
+  \end{multicols}
+
+%-------------------------------------------
+\end{document}

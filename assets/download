@@ -1,0 +1,24 @@
+<?php
+session_start();
+
+$allowed_langs = ['en', 'ja', 'ko', 'vi'];
+
+if (isset($_GET['lang']) && in_array($_GET['lang'], $allowed_langs)) {
+    $_SESSION['lang'] = $_GET['lang'];
+}
+
+if (!isset($_SESSION['lang'])) {
+    $_SESSION['lang'] = 'en';
+}
+
+$current_lang = $_SESSION['lang'];
+$lang = require_once "lang/{$current_lang}.php";
+
+// Main Entry Point
+require_once 'components/header.php';
+require_once 'components/hero.php';
+require_once 'components/about.php';
+require_once 'components/experience.php';
+require_once 'components/projects.php';
+require_once 'components/footer.php';
+?>
